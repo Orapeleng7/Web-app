@@ -1,0 +1,189 @@
+/* General Container Styling */
+.doctor-list-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Title Styling */
+.title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Search Input */
+.search-input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border-color 0.3s;
+}
+
+.search-input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Table Styling */
+.doctor-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.doctor-table th, .doctor-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Doctor Name Styling */
+.doctor-name {
+  cursor: pointer;
+  color: #007bff;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.doctor-name:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+/* Doctor Picture Styling */
+.doctor-picture {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Status Styles */
+.status-active {
+  color: green;
+  font-weight: bold;
+}
+
+.status-suspended {
+  color: red;
+  font-weight: bold;
+}
+
+/* Button Styling */
+.edit-button, .delete-button, .suspend-button, .status-toggle-button, .save-button {
+  padding: 8px 14px;
+  margin-right: 12px;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  transition: background-color 0.3s, transform 0.3s ease;
+}
+
+/* Save Button */
+.save-button {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.save-button:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+}
+
+/* Suspend Button */
+.suspend-button {
+  background-color: #FF5733;
+  color: white;
+}
+
+.suspend-button:hover {
+  background-color: #e14a27;
+  transform: scale(1.05);
+}
+
+/* Status Toggle Button */
+.status-toggle-button {
+  background-color: #007bff;
+  color: white;
+}
+
+.status-toggle-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+/* Doctor Details Section */
+.doctor-details {
+  background-color: #f9f9f9;
+  border-top: 2px solid #ddd;
+}
+
+.doctor-details-container {
+  padding: 20px;
+  background-color: white;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 10px;
+}
+
+.doctor-details-container p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+/* Back Button (Inside Doctor Details) */
+.back-button-details {
+  background-color: #f0f0f0;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-bottom: 15px;
+  transition: background-color 0.3s;
+}
+
+.back-button-details:hover {
+  background-color: #e0e0e0;
+}
+
+/* No Doctors Found */
+.no-doctors {
+  text-align: center;
+  font-size: 18px;
+  color: #888;
+  padding: 20px 0;
+}
+
+/* Responsive Styling for Mobile */
+@media (max-width: 768px) {
+  .doctor-table th, .doctor-table td {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .doctor-picture {
+    width: 40px;
+    height: 40px;
+  }
+
+  .save-button, .suspend-button, .status-toggle-button, .edit-button, .delete-button {
+    padding: 6px 10px;
+    font-size: 12px;
+  }
+
+  .doctor-details-container {
+    padding: 15px;
+  }
+
+  .search-input {
+    padding: 8px;
+    font-size: 14px;
+  }
+}
